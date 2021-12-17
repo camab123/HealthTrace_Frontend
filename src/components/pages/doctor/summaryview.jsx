@@ -5,8 +5,6 @@ import { getApi } from '../../utilities/api/fetchData';
 import { useLocation, Link } from "react-router-dom";
 import HorizontalBarChart from "../../utilities/graph";
 import {BsQuestionCircle} from "react-icons/bs";
-import {FormattedDate} from "react-intl";
-import InfiniteScroll from "react-infinite-scroll-component";
 import {
     useQuery,
     useInfiniteQuery

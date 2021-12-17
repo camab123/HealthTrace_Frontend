@@ -1,11 +1,8 @@
-import React, { useState, useEffect, memo } from "react";
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import React, { useState, memo } from "react";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantile } from "d3-scale";
-import { csv } from "d3-fetch";
 import { useQuery } from "react-query";
 import { getApi } from '../utilities/api/fetchData';
-import ReactDOM from "react-dom";
-import { useLocation, Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import "./mapstyle.css"
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MapChart from "../../utilities/mapchart";
-import TestChart from "../../utilities/testmapchart";
 import StateSummary from './statesummary';
 import { getApi } from '../../utilities/api/fetchData';
 import "./state.css";

@@ -1,8 +1,6 @@
 import "./CustomNav.css";
-import { Navbar, Container } from "react-bootstrap";
 import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React from "react";
 {/* <Navbar bg="dark" expand="lg" variant="dark">
             <Container>
                 <Navbar.Brand href="/home">WhatsUpDoc</Navbar.Brand>

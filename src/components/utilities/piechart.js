@@ -1,5 +1,5 @@
 import { Pie } from 'react-chartjs-2';
-import React, {Component} from "react";
+import React from "react";
 function PieChart(props) {
     const graphdata = {
         labels: [ ...props.labels
