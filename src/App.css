@@ -1,0 +1,71 @@
+hr {
+    margin: 2% 0;
+    border-top: 1px solid rgb(78, 78, 78);
+    border-bottom: 1px solid #ffffff;
+    z-index: -1 !important;
+    position: relative !important;
+}
+body {
+    font-family: 'Arvo', serif;
+    background-color: #f6f6f6;
+}
+svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+.canvas-container {
+    min-height: 60vh;
+}
+#root {
+    overflow-x: hidden;
+    
+}
+/* Color Theme Swatches in Hex */
+/* .color-1-background { background-color: #424A5F; }
+.color-2-background { background-color: #4D6371; }
+.color-3-background { background-color: #264156; }
+.color-4-background { background-color: #A49F9C; }
+.color-5-background { background-color: #F2F2F2; }
+
+.color-1 { color: #424A5F; }
+.color-2 { color: #4D6371; }
+.color-3 { color: #264156; }
+.color-4 { color: #A49F9C; }
+.color-5 { color: #F2F2F2; } */
+
+.color-1-background { background-color: #363538; }
+.color-2-background { background-color: #8d8c8a; }
+.color-3-background { background-color: #52d6f4; }
+.color-4-background { background-color: #408697; }
+.color-5-background { background-color: #f6f6f6; }
+
+.color-1 { color: #363538; }
+.color-2 { color: #8d8c8a; }
+.color-3 { color: #52d6f4; }
+.color-4 { color: #408697; }
+.color-5 { color: #f6f6f6; }
+
+
+@keyframes load {
+    0%{
+        opacity: 0.1;
+        filter: blur(4px);
+        letter-spacing: 3px;
+        }
+    100%{
+        opacity: 1;
+		filter: blur(0); 
+        }
+}
+
+.animate {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	margin: auto;
+	font-family: Helvetica, sans-serif, Arial;
+	animation: load 1.2s infinite 0s ease-in-out;
+	animation-direction: alternate;
+	text-shadow: 0 0 1px white;
+}

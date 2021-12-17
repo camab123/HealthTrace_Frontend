@@ -1,0 +1,36 @@
+.NavBar {
+    color: white;  
+    height: 45px;
+    width: 100%;
+    position:sticky;
+    z-index: 1000 !important;
+}
+
+.navrow {
+    padding: 0px;
+    margin-bottom: 3px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.navBrand {
+    line-height: 45px;
+    font-weight: 800;
+    font-size: calc(14px + 0.7vw);
+    letter-spacing: -0.25px;
+    color: #DAEAEF;
+    text-decoration: none !important;
+}
+.navBrand:hover {
+    color: #DAEAEF;
+}
+.searchbar {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+@media only screen and (max-width: 992px) {
+    .NavBar {
+        height: 90px;
+    }
+}

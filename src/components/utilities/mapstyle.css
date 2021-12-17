@@ -1,0 +1,70 @@
+.mapFrame {
+    width: fit-content!important;
+    
+}
+/* .mapContainer {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 16px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 0px;
+} */
+
+.display-flex {
+    display: flex;
+  }
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+.GridContainer {
+  padding: 0px;
+  height: calc(100%);
+  float: right;
+  width: fit-content;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mapContainer {
+    height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+}
+.gridLayout {
+    float: left;
+    height: 100%;
+}
+.scaleMinData {
+    font-family: inherit;
+    font-size: calc(11px + 0.2vw);
+    text-align: right;
+    height: 21px;
+}
+.scaleMaxData {
+    font-family: inherit;
+    font-size: calc(11px + 0.2vw);
+    text-align: right;
+    height: 21px;
+}
+.MinMaxSpacer{
+  height: calc(100% - 42px)
+}
+.mapTitle {
+    margin-left: 15px;
+    letter-spacing: 0.25px;
+    font-size: calc(7px + 0.3vw);
+    font-weight: 300;
+    text-align: right;
+    height: 21px;
+    width: fit-content;
+}
+.gradientMap {
+  margin-left: 4px;
+  float: left;
+  height: 98%;
+  width: calc(8px + 0.8vw);
+  max-width: 22px;
+}

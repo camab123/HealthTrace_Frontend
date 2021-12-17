@@ -1,0 +1,42 @@
+.StateInfoText {
+    font-family: inherit;
+    margin-bottom: 2px;
+    font-size: calc(16px + 1vw);
+}
+.RankContainer {
+    width: fit-content;
+    margin-left: 5px;
+}
+.RankText {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    text-size-adjust: none;
+    margin: 0px;
+    font-size: calc(8px + 0.6vw);
+    line-height: 1.4;
+    font-weight: 500;
+}
+.mapcolumn {
+    height: 13vw;
+    min-height: 100px;
+}
+.mapOuter {
+    height: calc(100%);
+    float: left;
+    padding: 0;
+}
+.StateInfo {
+    height: fit-content;
+    padding-top: 2%;
+    margin-bottom: 8%;
+}
+#StateHr {
+    margin-top: 0;
+  }
+
+@media only screen and (max-width: 768px) {
+    .StateInfo{
+        margin-bottom: 3%;
+    }
+}

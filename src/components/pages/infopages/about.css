@@ -1,0 +1,30 @@
+.AboutBanner {
+    width: 100%;
+    height: fit-content;
+    padding: 3% 15% 1% 15%;
+}
+.AboutBannerText {
+    width: 100%;
+    text-align: center;
+}
+.OurGoal {
+    font-size: calc(22px + 1vw);
+    font-weight: 500;
+}
+.GoalDetail {
+    font-size: calc(12px + 0.5vw);
+    font-weight: 100;
+}
+
+.AboutPage {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.AboutBox {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3% 5% 1% 5%;
+}

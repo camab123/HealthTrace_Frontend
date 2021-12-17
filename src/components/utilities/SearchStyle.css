@@ -1,0 +1,34 @@
+.searchbar {
+    float: right; 
+    height: fit-content;
+    z-index: 30 !important;
+    position: relative;
+}
+.d-flex {
+    float: right;
+    margin-right: 25px;
+}
+.mb-3 {
+    margin-bottom: 0 !important;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.dropdown-header {
+    padding: 2% 1rem;
+}
+.dropdown-menu-search {
+    width: 93%;
+    height: fit-content !important;
+    background-color: rgb(248, 248, 248);
+}
+.dropdown-item {
+    padding: 1% 0.9rem;
+    font-size: 14px;
+    height: fit-content;
+}
+.form-control {
+    font-size: calc(8px + 0.4vw);
+    width: fit-content;
+}

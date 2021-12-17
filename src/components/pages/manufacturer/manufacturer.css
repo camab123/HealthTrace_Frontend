@@ -1,0 +1,87 @@
+.manufacturerInfo {
+    height: fit-content;
+    padding-top: 2%;
+}
+
+.dropdown-toggle {
+    font-size: calc(10px + 0.3vw);
+    margin-top: 2px;
+}
+
+.dropdown-item {
+    font-size: calc(10px + 0.3vw);
+}
+.btn {
+    text-align: left;
+}
+
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+  }
+.btn:hover {
+    background-color: #FBFAFA;
+    color: #6c757d;
+}
+
+.TopPaymentsContainer {
+    float: right;
+    width: 35%;
+    height: fit-content;
+    margin: auto;
+    margin-right: 3%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.marginCol {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.piechart {
+    width: 40%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: rgba(2, 255, 150, 0) !important;
+    color: black !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.dropdown-menu {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.GraphicalContainerManufacturer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.summaryYear {
+    font-size: calc(8px + 0.7vw);
+}
+.PieChartContainer {
+    height: 300px;
+}
+.nopaddingright {
+    padding-right: 0;
+    
+}
+.nopaddingleft {
+    padding-left: 0;
+}
+
+#dropdown {
+    z-index: 1 !important;
+    position: relative !important;
+}
+#dropdown-split-basic {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

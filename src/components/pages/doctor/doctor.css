@@ -1,0 +1,272 @@
+.MainBox {
+    width: 70%;
+    margin:auto;
+    height: fit-content;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    min-height: 100vh;
+}
+
+.doctorInfo {
+    height: fit-content;
+    padding-top: 2%;
+}
+.InfoText {
+    margin-bottom: 1.4%;
+    margin-left:4px;
+    font-size: calc(13px + 0.7vw);
+    font-weight: 600;
+}
+
+.btn {
+    border-color: rgba(41, 41, 41, 0);
+    text-align: left;
+}
+
+.btn:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+.btn:hover {
+    background-color: #FBFAFA;
+    border-color: rgba(207, 207, 207, 0);
+    color: #6c757d;
+}
+
+.SummaryPage {
+    height: fit-content;
+}
+
+.summaryBox {
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.summaryTitle {
+    font-weight: bold;
+    margin-left: 1rem;
+    padding-top: 10px;
+}
+
+.StatisticCardContainer {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+}
+.DoctorGraphCardContainer {
+    float: left;
+    width: 50%;
+    height: fit-content;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+.StatisticCard {
+    width: 100%;
+    height: fit-content;
+    padding-top: 5px;
+}
+.TransactionCard {
+    width: 95%;
+    height: fit-content;
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 1.8%;
+    padding-bottom: 0.5%;
+}
+.TransactionCard:nth-child(even) {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.TransactionCard:nth-child(odd) {
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 2px 8px 0px;
+}
+
+.TransactionCardText {
+    font-family: Ubuntu;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: calc(12px + 0.3vw);
+}
+.TransactionCardTitle {
+    font-size: calc(12px + 0.3vw);
+}
+
+.TransactionItemType {
+    font-size: calc(9px + 0.3vw);
+    text-align: left;
+    flex: 1 1 0;
+    overflow: hidden;
+    min-width: max-content;
+    text-overflow: ellipsis;
+}
+
+.TransactionItemCategory {
+    font-size: calc(9px + 0.3vw);
+    flex: 2 2 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 0 1em;
+}
+.TransactionItemName {
+    font-size: calc(9px + 0.3vw);
+    text-align: right;
+    flex: 2 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 1em;
+    max-width: 55%;
+}
+
+.NaturePayment {
+    font-size: calc(10px + 0.3vw);
+    float: left;
+    height: fit-content;
+    width: 65%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.listview {
+    margin-top: 2px;
+    display: flex;
+    white-space: nowrap; 
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background-color: rgba(199, 199, 199, 0.603);
+    color: black !important;
+
+}
+.dropdown-toggle {
+    padding: 0;
+    padding-top: 1px;
+}
+
+.specialty {
+    font-weight: lighter;
+    font-size: calc(12px + 0.3vw);
+}
+.location {
+    font-weight: lighter;
+    font-size: calc(12px + 0.3vw);
+}
+.payinfo {
+    font-weight: bold;
+    font-size: calc(12px + 0.4vw);
+    float: left;
+    margin-right: 1.4%;
+}
+.pharmatotal {
+    float: right;
+    font-size: calc(8px + 0.7vw);
+    margin-bottom: 0px;
+    
+}
+.item {
+    font-size: calc(10px + 0.3vw);
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 4px;
+}
+
+.Transactionitemname {
+    float: left;
+}
+
+.CardPayAmount {
+    float: right;
+    font-size: calc(10px + 0.3vw);
+}
+.Company {
+    font-size: calc(10px + 0.3vw);
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.CardDate {
+    font-size: calc(10px + 0.3vw);
+    text-align: right;
+}
+
+.col-custom {
+    width: 20%;
+    float: left;
+}
+
+.GraphicalContainer {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+.TransactionCardContainer {
+    overflow-y:auto;
+    overflow-x: hidden;
+    flex: 1;
+    max-height: 300px;
+}
+
+.buttonHolder {
+    width: 100%;
+}
+
+.button3 {
+    display: block;
+    padding:0.5em 3em;
+    border:0.16em solid #8d8c8a;
+    background-color: #f6f6f6;
+    width: fit-content;
+    margin: auto;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#b1b1b1;
+    text-align:center;
+    transition: all 0.15s;
+}
+.button3:hover {
+    color:#747474;
+    border-color:#8d8c8a;
+}
+.button3:active{
+    color:#5c5c5c;
+    border-color:#8d8c8a;
+}
+@media all and (max-width:30em) {
+.button3 {
+    display:block;
+    margin:0.4em auto;
+    }
+}
+.endTransactions {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .MainBox {
+        width: 95%;
+        margin:auto;
+        height: fit-content;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    .TransactionCardContainer {
+        max-height: 200px;
+        margin-top: 10px;
+    }
+    .TransactionCard {
+        width: 80%;
+    }
+  }
