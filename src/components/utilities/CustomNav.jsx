@@ -16,7 +16,7 @@ function CustomNavbar (props) {
             <div className="container">
                 <div className="row">
                     <div className="col-12 col-md-6">
-                        <a className="navBrand color-5" href="/home">WhatsUpDoc</a>
+                        <a className="navBrand color-5" href="/home">HealthTrace</a>
                     </div>
                     <div className="col-2 col-xl-3 d-none d-sm-block"></div>
                     <div className="col-12 col-md-4 col-lg-4 col-xl-3 searchbar">
