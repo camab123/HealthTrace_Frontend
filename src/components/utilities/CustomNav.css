@@ -1,9 +1,10 @@
 .NavBar {
     color: white;  
-    height: 45px;
+    height: 55px;
     width: 100%;
     position:sticky;
     z-index: 1000 !important;
+    padding-top: 5px;
 }
 
 .navrow {
@@ -31,6 +32,6 @@
 
 @media only screen and (max-width: 992px) {
     .NavBar {
-        height: 90px;
+        height: 105px;
     }
 }

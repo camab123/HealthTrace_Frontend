@@ -68,3 +68,18 @@
   width: calc(8px + 0.8vw);
   max-width: 22px;
 }
+
+.mapStyling {
+  width: 95%;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .mapStyling { 
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+}

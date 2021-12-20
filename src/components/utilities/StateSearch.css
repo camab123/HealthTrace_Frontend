@@ -1,0 +1,21 @@
+.DropDownContent {
+    width: 17%;
+    height: fit-content !important;
+    max-height: 100px;
+    background-color: rgb(255, 255, 255);
+}
+
+.statesearchbar {
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+}
+.customsearchbar {
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .DropDownContent { 
+        max-height: 70px;
+    }
+}

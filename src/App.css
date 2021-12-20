@@ -18,20 +18,18 @@ svg {
 }
 #root {
     overflow-x: hidden;
-    
 }
-/* Color Theme Swatches in Hex */
-/* .color-1-background { background-color: #424A5F; }
-.color-2-background { background-color: #4D6371; }
-.color-3-background { background-color: #264156; }
-.color-4-background { background-color: #A49F9C; }
-.color-5-background { background-color: #F2F2F2; }
 
-.color-1 { color: #424A5F; }
-.color-2 { color: #4D6371; }
-.color-3 { color: #264156; }
-.color-4 { color: #A49F9C; }
-.color-5 { color: #F2F2F2; } */
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
 
 .color-1-background { background-color: #363538; }
 .color-2-background { background-color: #8d8c8a; }

@@ -3,6 +3,7 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { scaleQuantile } from "d3-scale";
 import { csv } from "d3-fetch";
 import {useHistory} from 'react-router-dom';
+import "./mapstyle.css"
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3.0.0/states-10m.json";
 
 const StateMapChart = () => {
@@ -63,8 +64,10 @@ const StateMapChart = () => {
   } 
   const mapStyle = {
     outer: {
-      width: "300px",
-      height: "auto"
+      width: "95%",
+      height: "auto",
+      marginLeft: "10%",
+      marginRight: "5%"
     },
   }
   useEffect(() => {
@@ -89,7 +92,7 @@ const StateMapChart = () => {
     ]);
 
   return (
-    <ComposableMap style={mapStyle.outer} data-tip="" projectionConfig={{ scale: 1000 }} projection="geoAlbersUsa">
+    <ComposableMap className="mapStyling" data-tip="" projectionConfig={{ scale: 1000 }} projection="geoAlbersUsa">
       <Geographies geography={geoUrl}>
         {({ geographies }) =>
           geographies.map(geo => {

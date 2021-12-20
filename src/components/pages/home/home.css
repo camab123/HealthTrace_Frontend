@@ -2,3 +2,145 @@
     width: 200px;
     height: auto;
 }
+
+.HomePage {
+    width: 100% !important;
+    margin-bottom: 0%;
+}
+
+.WelcomeBox {
+    width: 100%;
+    height: 25vh;
+    max-height: 200px;
+    min-height: 150px;
+    padding: 3% 2% 2% 2%;
+}
+
+.WelcomeBoxText1 {
+    font-size: calc(18px + 1vw);
+    font-weight: 600;
+}
+
+.WelcomeBoxText2 {
+    font-size: calc(12px + 1vw);
+    font-weight: 600;
+}
+
+.HeadlineStats {
+    padding-top: 5%;
+    font-size: calc(20px + 0.9vw);
+    font-weight: 600;
+}
+
+.GeneralStats {
+    padding-top: 2%;
+    font-size: calc(16px + 0.9vw);
+    font-weight: 600;
+    padding-bottom: 4%;
+}
+
+.NormPadding {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.StatImages {
+    height: 82px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+}
+
+.StatImages2 {
+    height: 82px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+}
+
+.StatImages3 {
+    height: 82px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.SumPay {
+    font-size: calc(20px + 0.9vw);
+    padding-bottom: 2%;
+}
+
+.ExampleDoc {
+    height: fit-content;
+    padding: 4% 3% 3% 5%;
+}
+
+.HomeSectionMargin {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.HomeCard {
+    padding: 7% 2% 10% 2%;
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.HomeCardTitle {
+    font-size: calc(14px + 0.7vw);
+}
+
+.HomeCardText { 
+    margin-top: 5px;
+    font-size: calc(10px + 0.3vw);
+    font-weight: 200;
+    width: 70%;
+    margin: auto;
+}
+.StateList {
+    height: 65%;
+    margin-top: 10%;
+    padding-top: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.StateBanner {
+    margin-bottom: 10%;
+}
+.HeatMapTitle {
+    font-size: calc(14px + 0.7vw);
+}
+.byTransaction {
+    font-size: calc(12px + 0.7vw);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .WelcomeBox {
+        padding: 6% 2% 2% 2%;
+    }
+    .mobileMargin {
+        margin-bottom: 10px;
+    }
+    .NormPadding {
+        padding-right:3%;
+        padding-left: 3%;
+    }
+    .HomeCard {
+        width: 100%;
+    }
+    .StateList {
+        height: 180px;
+        margin-top: 0%;
+    }
+    .StateBanner {
+        margin-bottom: 0%;
+    }
+}
