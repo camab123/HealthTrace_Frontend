@@ -6,9 +6,10 @@ import {useHistory} from 'react-router-dom';
 import "./mapstyle.css"
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3.0.0/states-10m.json";
 
-const StateMapChart = () => {
+const StateMapChart = ({summary}) => {
   const history = useHistory();
   const [data, setData] = useState([]);
+  
   const StatesNames = {
     "Alabama": "AL",
     "Alaska": "AK",
@@ -77,7 +78,7 @@ const StateMapChart = () => {
   }, []);
 
   const colorScale = scaleQuantile()
-    .domain(data.map(d => d.TransactionPerPerson))
+    .domain(data.map(d => d[summary]))
     .range([
       "#fdfdec",
       "#ffffd9",
@@ -101,7 +102,7 @@ const StateMapChart = () => {
               <Geography
                 key={geo.rsmKey}
                 geography={geo}
-                fill={cur ? colorScale(cur.TransactionPerPerson) : "#fffff5"}
+                fill={cur ? colorScale(cur[summary]) : "#fffff5"}
                 onClick={() => {
                   history.push('/State/' + StatesNames[geo.properties["name"]]);
                 }}

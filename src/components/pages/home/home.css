@@ -108,6 +108,7 @@
     margin: auto;
 }
 .StateList {
+    position: relative;
     height: 65%;
     margin-top: 10%;
     padding-top: 5%;
@@ -121,6 +122,13 @@
 }
 .byTransaction {
     font-size: calc(12px + 0.7vw);
+}
+#HomeMapButton {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    -webkit-transform: translateX(-50%);
+    margin-left: 0;
 }
 
 

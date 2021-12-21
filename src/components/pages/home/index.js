@@ -6,6 +6,17 @@ import CompanySymbol from "../../../assets/images/CompanySymbol.png";
 import CashSymbol from "../../../assets/images/CashSymbol.png";
 import StateSearch from '../../utilities/StateSearch';
 function Home() {
+    const [stateMapSummary, setStateMapSummary] = useState("TransactionPerPerson")
+    const [homeButtonText, setHomeButtonText] = useState("View Opioid Map");
+    const handleClick = () => {
+        if (stateMapSummary == "TransactionPerPerson") {
+            setHomeButtonText("View Total Map")
+            setStateMapSummary("OpioidPerPerson")
+        } else {
+            setHomeButtonText("View Opioid Map")
+            setStateMapSummary("TransactionPerPerson")
+        }
+    }
     return (
         <>
             <div className='WelcomeBox color-4-background'>
@@ -71,10 +82,11 @@ function Home() {
                                     <div className='byTransaction'>By Transactions</div>
                                 </div>
                                 <StateSearch/>    
+                                <button className='button3 opioidButton' id="HomeMapButton" onClick={handleClick}>{homeButtonText}</button>
                             </div>     
                         </div>
                         <div className='col-12 col-sm-7'>
-                            <StateMapChart/>
+                            <StateMapChart summary={stateMapSummary}/>
                         </div>
                        
                     </div>

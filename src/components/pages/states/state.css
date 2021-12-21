@@ -29,11 +29,20 @@
 .StateInfo {
     height: fit-content;
     padding-top: 2%;
-    margin-bottom: 8%;
+    margin-bottom: min(20px, 4%);
 }
 #StateHr {
     margin-top: 0;
   }
+
+.opioidButton {
+    margin-bottom: 10px;
+    padding: 4px 4px 4px 4px;
+    margin-left: 5px;
+    border-color: #8d8c8a;
+    border-width: 1px;
+    font-size: calc(8px + 0.3vw);
+}
 
 @media only screen and (max-width: 768px) {
     .StateInfo{

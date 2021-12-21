@@ -12,7 +12,21 @@ import {
 
 function StateContainer() {
     let { state } = useParams();
+    const [summary, setSummary] = useState("summary");
+    const [mapSummary, setMapSummary] = useState("TransactionSum")
+    const [buttonText, setbuttonText] = useState("View Opioids");
     const {isLoading, error, data}  = useQuery(`StateRank`, getApi("/state/ranking/" + state + "/?format=json"));
+    const handleClick = () => {
+        if (summary == "summary") {
+            setSummary("summaryopioids")
+            setbuttonText("View All")
+            setMapSummary("OpioidSum")
+        } else {
+            setSummary("summary")
+            setbuttonText("View Opioids")
+            setMapSummary("TransactionSum")
+        }
+    }
     if(error){
         return <p>ERROR</p>;
     }
@@ -32,13 +46,14 @@ function StateContainer() {
                             </div>
                             <StateRankings ranks={data}/>
                     </div>
+                    <button className='button3 opioidButton' onClick={handleClick}>{buttonText}</button>
                 </div>
                 <div className="col-7 col-md-6 mapcolumn d-none d-sm-block">
-                    <MapChart state={state}/>
+                    <MapChart state={state} summary={mapSummary}/>
                 </div>
             </div>
             <hr id="StateHr"/>
-            <StateSummary state={state}/>
+            <StateSummary state={state} summary={summary}/>
             <hr/>
         </div>
         

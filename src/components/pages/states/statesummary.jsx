@@ -15,10 +15,11 @@ import {
 
 function StateSummary(props) {
     const state = props.state
+    const summaryType = props.summary
     const [yearValue,setValue]=useState("All");
-    const {isLoading, error, data}  = useQuery([`StateSummary`, yearValue], getApi("/state/summary/" + state + "/?format=json&year=" + yearValue));
+    const {isLoading, error, data}  = useQuery([`StateSummary`, yearValue, summaryType], getApi(`/state/${summaryType}/${state}/?format=json&year=${yearValue}`));
     const [yearValueSummary, setYearValueSummary]=useState("All Payments");
-    const handleSelect=(e)=>{     
+    const handleSelect=(e)=>{
         setValue(e)
         if (e != "All") {
             setYearValueSummary("Payments " + e)

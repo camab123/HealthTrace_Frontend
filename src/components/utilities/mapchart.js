@@ -45,7 +45,7 @@ const LinearGradient = props => {
   );
 };
 
-const MapChart = ({setTooltipContent, state}) => {
+const MapChart = ({setTooltipContent, state, summary}) => {
   const {isLoading, error, data}  = useQuery([`MapView`], getApi("/state/map/"+ state + "/?format=json"))
   const [content, setContent] = useState("");
   if (isLoading){
@@ -59,7 +59,7 @@ const MapChart = ({setTooltipContent, state}) => {
       }
     }
     const colorScale = scaleQuantile()
-      .domain(data["Map"]["features"].map(d => d.properties.TransactionSum))
+      .domain(data["Map"]["features"].map(d => d.properties[summary]))
       .range([
         "#fdfdec",
         "#ffffd9",
@@ -72,10 +72,10 @@ const MapChart = ({setTooltipContent, state}) => {
         "#408697",
         "#367180",
       ]);
-      const maxData = data["Map"]["features"].map(d => d.properties).reduce((max, item) => (item.TransactionSum > max ? item.TransactionSum : max), 0);
+      const maxData = data["Map"]["features"].map(d => d.properties).reduce((max, item) => (item[summary] > max ? item[summary] : max), 0);
       const gradientData = {
         fromColor: colorScale(0),
-        toColor: colorScale(data["Map"]["features"].map(d => d.properties).reduce((max, item) => (item.TransactionSum > max ? item.TransactionSum : max), 0)),
+        toColor: colorScale(data["Map"]["features"].map(d => d.properties).reduce((max, item) => (item[summary] > max ? item[summary] : max), 0)),
         min: 0,
         max: (maxData)
       };  
@@ -92,10 +92,9 @@ const MapChart = ({setTooltipContent, state}) => {
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill={geo.properties.TransactionSum ? colorScale(geo.properties.TransactionSum) : "#fffff5"}
+                    fill={geo.properties[summary] ? colorScale(geo.properties[summary]) : "#fffff5"}
                     onMouseEnter={() => {
-                      const { name, TransactionSum } = geo.properties;
-                      setContent(`${name} — ${rounded(TransactionSum)}`);
+                      setContent(`${geo.properties.name} — ${rounded(geo.properties[summary])}`);
                     }}
                     onMouseLeave={() => {
                       setContent("");
