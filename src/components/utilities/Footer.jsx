@@ -7,7 +7,7 @@ function Footer() {
             <div class="row">
             <div class="col-sm-12 col-md-6">
                 <h6>About</h6>
-                <p class="text-justify color-2">All data used in application is from publicly released datasets. For further information please read About Us section. </p>
+                <p class="text-justify color-2">All data used in application is from publicly released datasets. For further information please read about us section. </p>
             </div>
 
             <div class="col-xs-6 col-md-3">
