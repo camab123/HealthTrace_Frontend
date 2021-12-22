@@ -46,7 +46,6 @@ function SearchResultPage() {
                     </div>
                 <hr/>
                 <div className="searchResultBox">
-                    
                     {
                         data.Doctors.slice(0,15).map(item => (
                             <Link to={{
@@ -63,15 +62,16 @@ function SearchResultPage() {
                             </Link>
                         ))
                     }   
-                    <div className="searchPagination">
-                        <button id="pageNav" onClick={() => setPage(old => Math.max(old - 1, 0))}
-                            disabled={page === 1} class="previous round">&#8249;</button>
-                        <button id="pageNav" onClick={() => {
-                            if (!isPreviousData && data.Pages > page) {
-                                setPage(old => old + 1)
-                            }
-                         }} class="next round" disabled={isPreviousData || !data.Pages > page}>&#8250;</button>
-                </div>
+                    
+                        <div className="searchPagination">
+                            <button id="pageNav" onClick={() => setPage(old => Math.max(old - 1, 0))}
+                                disabled={page === 1} class="previous round">&#8249;</button>
+                            <button id="pageNav" onClick={() => {
+                                if (!isPreviousData && data.Pages > page) {
+                                    setPage(old => old + 1)
+                                }
+                            }} class="next round" disabled={isPreviousData || !data.Pages > page}>&#8250;</button>
+                        </div>
                 </div>
             </div>
         )

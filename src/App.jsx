@@ -10,23 +10,28 @@ import AboutContainer from "./components/pages/infopages/about";
 import ContactContainer from "./components/pages/infopages/contact";
 import React, {Component} from "react";
 import Footer from "./components/utilities/Footer";
-import "./App.css"
+import "./App.css";
+import ReactGA from 'react-ga';
+
 function App() {
+  const TRACKING_ID = "UA-215782983-1";
+  ReactGA.initialize(TRACKING_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
-    <Router>
-      <CustomNavbar/>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Home" component={Home} />
-        <Route path="/Doctor/:doctorid" component={DoctorContainer} />
-        <Route path="/Search/" component={SearchResultsPage} />
-        <Route path="/Manufacturers/:manufacturerid" component={ManufacturerContainer} />
-        <Route path="/State/:state" component={StateContainer}/>
-        <Route path="/About/" component={AboutContainer}/>
-        <Route path="/Contact/" component={ContactContainer}/>
-      </Switch>
-      <Footer/>
-    </Router>
+        <Router>
+        <CustomNavbar/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Home" component={Home} />
+            <Route path="/Doctor/:doctorid" component={DoctorContainer} />
+            <Route path="/Search/" component={SearchResultsPage} />
+            <Route path="/Manufacturers/:manufacturerid" component={ManufacturerContainer} />
+            <Route path="/State/:state" component={StateContainer}/>
+            <Route path="/About/" component={AboutContainer}/>
+            <Route path="/Contact/" component={ContactContainer}/>
+          </Switch>
+        <Footer/>
+      </Router>
   );
 }
 
