@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.FullPageHome {
+    height: fit-content;
+}
+
 .HomePage {
     width: 100% !important;
     margin-bottom: 0% !important;

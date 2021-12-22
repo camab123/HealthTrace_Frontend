@@ -18,12 +18,11 @@ function Home() {
         }
     }
     return (
-        <>
+        <div className='FullPageHome'>
             <div className='WelcomeBox color-4-background'>
                     <div className='center color-3 WelcomeBoxText1'>Search for your hometown Doctor's Transactions</div>
                     <div className='center color-5 WelcomeBoxText2'>See what companies they have been taking money from</div>
             </div>
-
             <div className="MainBox HomePage">
                 <div className='HomeSectionMargin'>
                     <div className='GeneralStats NormPadding color-1'>
@@ -91,9 +90,8 @@ function Home() {
                        
                     </div>
                 </div>
-                
             </div>
-        </>
+        </div>
     )
     }
 export default Home;

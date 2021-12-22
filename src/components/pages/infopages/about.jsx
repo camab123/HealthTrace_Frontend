@@ -25,8 +25,7 @@ function AboutContainer() {
                         and States were created through the database of data gathered from CMS. No individual page or information has been altered in a way to mislead
                         users. Any discrepancies in the data should be reported to Centers for Medicare and Medicaid Services to update their records.
                     </p>
-                        <div className='right'>Thank you for your support,</div>
-                        <div className='right'>Cameron Abeel</div>
+                        <div className='right'>Thank you for your support</div>
                 </div>
             </div>
         </>
