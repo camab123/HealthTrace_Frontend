@@ -58,7 +58,7 @@ function SearchBar() {
                 {
                     doctors.map(doctor => {
                         return (
-                            <Dropdown.Item href={`/Doctor/${doctor.Id}/`} style={{overflow: "hidden",textOverflow : "ellipsis"}}>{doctor.Name}</Dropdown.Item>
+                            <Dropdown.Item onClick={handleClick} href={`/Doctor/${doctor.Id}/`} style={{overflow: "hidden",textOverflow : "ellipsis"}}>{doctor.Name}</Dropdown.Item>
                         )    
                     })
                 }
