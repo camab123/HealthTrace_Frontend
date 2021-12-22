@@ -67,7 +67,7 @@ function SearchBar() {
                 {
                     manufacturers.map(manufacturer => {
                         return (
-                            <Dropdown.Item href={"/manufacturers/" + manufacturer.Id} style={{overflow: "hidden",textOverflow : "ellipsis"}}>{manufacturer.Name}</Dropdown.Item>
+                            <Dropdown.Item onClick={handleClick} href={"/manufacturers/" + manufacturer.Id} style={{overflow: "hidden",textOverflow : "ellipsis"}}>{manufacturer.Name}</Dropdown.Item>
                         )    
                     })
                 }
