@@ -65,7 +65,7 @@ function StateSearch() {
     const [states, setStates] = useState(statesData)
     const [state, setState] = useState("")
     const handleChange = (e) => {
-        setStates(Object.fromEntries(Object.entries(statesData).filter(([k,v]) => k.includes(e.target.value))));
+        setStates(Object.fromEntries(Object.entries(statesData).filter(([k,v]) => k.toLowerCase().includes(e.target.value.toLowerCase()))));
     }
     function handleClick() {
         if (showDrop) {

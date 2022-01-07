@@ -15,6 +15,7 @@ import ReactGA from 'react-ga';
 import FaqsContainer from "./components/pages/infopages/faqs";
 import NotFoundContainer from "./components/pages/infopages/NotFound";
 
+
 function App() {
   const TRACKING_ID = "UA-215782983-1";
   ReactGA.initialize(TRACKING_ID);
