@@ -6,6 +6,7 @@ import {
 import DoctorSummaryView from "./summaryview";
 import { getApi } from '../../utilities/api/fetchData';
 import "./doctor.css";
+import NotFoundContainer from '../infopages/NotFound';
 import {
     useQuery,
   } from 'react-query'
@@ -14,11 +15,12 @@ function DoctorContainer() {
     let { doctorid } = useParams();
     const {isLoading, error, data}  = useQuery(`DoctorContainer`, getApi("/doctor/overview/" + doctorid + "/"))
     if(error){
-        return <p>ERROR</p>;
+        return <NotFoundContainer/>;
     }
     else if(isLoading){
         return (
             <div className="MainBox">
+                <h2 className="animate">Loading</h2>
             </div>
         )
     }

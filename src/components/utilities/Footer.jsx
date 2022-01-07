@@ -17,6 +17,8 @@ function Footer() {
                 <h6>Quick Links</h6>
                 <ul class="footer-links">
                 <li><a href="/About/">About Us</a></li>
+                <li><a href="/Privacy/">Privacy Policy</a></li>
+                <li><a href="/FAQS/">FAQS</a></li>
                 </ul>
             </div>
             </div>
