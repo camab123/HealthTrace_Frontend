@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef, useCallback, createRef } from 'react';
-import { Container, Row, Card, Col, ButtonGroup, Button, DropdownButton, Dropdown } from 'react-bootstrap';
+import React, { useState, useRef } from 'react';
+import { ButtonGroup, Button, Dropdown } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getApi } from '../../utilities/api/fetchData';
 import { useLocation, Link } from "react-router-dom";
 import HorizontalBarChart from "../../utilities/graph";
-import {BsQuestionCircle} from "react-icons/bs";
 import {
     useQuery,
     useInfiniteQuery

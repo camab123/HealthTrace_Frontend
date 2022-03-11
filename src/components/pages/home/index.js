@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import StateMapChart from '../../utilities/StateMap';
 import "./home.css";
 import DocSymbol from "../../../assets/images/DocSymbol.png";
