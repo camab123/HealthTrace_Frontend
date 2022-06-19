@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Row, Card, Col, ButtonGroup, Button } from 'react-bootstrap';
 import {
     useParams
@@ -9,7 +10,8 @@ import "./doctor.css";
 import NotFoundContainer from '../infopages/NotFound';
 import {
     useQuery,
-  } from 'react-query'
+  } from 'react-query';
+import { GetSEO } from "../../utilities/SEO";
 
 function DoctorContainer() {
     let { doctorid } = useParams();
@@ -34,6 +36,12 @@ function DoctorContainer() {
             location = data.StreetAddress1 + ", " + data.City + ", " + data.State
         }
         return (
+            <>
+            <GetSEO
+            title={`${doctorName} | HealthTrace`}
+            keywords={`pharmaceutical, doctors, ${doctorName}`}
+            description={`${doctorName} has active transactions listed on HealthTrace. Visit our site to view more.`}
+            />
             <div className="MainBox">
                 <div className="doctorInfo">
                     <div className="InfoText">
@@ -51,9 +59,8 @@ function DoctorContainer() {
                 <div>
                     <hr/>
                 </div>
-                
             </div>
-            
+            </>
         );
     }
 }

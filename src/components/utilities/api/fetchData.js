@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 //const baseURL = "http://0.0.0.0:8000/api/v1/health/"
-//const baseURL = "http://localhost/api/v1/health/"
+//const baseURL = "http://localhost:8000/api/v1/health/"
 //const baseURL = "http://34.198.190.79:8000/api/v1/health/"
 const baseURL = "https://healthtrace.io/api/v1/health/"
 export const axiosInstance = axios.create({

@@ -14,13 +14,19 @@ import "./App.css";
 import ReactGA from 'react-ga';
 import FaqsContainer from "./components/pages/infopages/faqs";
 import NotFoundContainer from "./components/pages/infopages/NotFound";
-
+import {GetSEO} from "./components/utilities/SEO";
 
 function App() {
   const TRACKING_ID = "UA-215782983-1";
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
   return (
+    <>
+        <GetSEO
+            title="HealthTrace"
+            keywords="pharmaceutical, doctors, drugs"
+            description="HealthTrace is a open database giving users access to Doctors transactions with pharmaceutical companies. Find out more about your doctor."
+          />
         <Router>
         <CustomNavbar/>
           <Switch>
@@ -37,6 +43,7 @@ function App() {
           </Switch>
         <Footer/>
       </Router>
+      </>
   );
 }
 
